@@ -1,0 +1,89 @@
+{
+  "stats": [
+    { "target": 250, "suffix": "rb+", "label": "Cup Terjual/Bulan" },
+    { "target": 42, "suffix": "", "label": "Outlet Aktif" },
+    { "target": 4, "suffix": ".9", "label": "Rating Rata-rata" },
+    { "target": 15, "suffix": " Menit", "label": "Rata-rata Antar" }
+  ],
+  "menuCategories": [
+    {
+      "name": "Thai Tea Series",
+      "code": "TT",
+      "items": [
+        { "code": "TT-01", "name": "Thai Original", "price": "15.000", "img": "https://images.pexels.com/photos/1194030/pexels-photo-1194030.jpeg?auto=compress&cs=tinysrgb&w=800", "tag": "Best Seller" },
+        { "code": "TT-02", "name": "Thai Cheese Cream", "price": "19.000", "img": "https://images.pexels.com/photos/6896001/pexels-photo-6896001.jpeg?auto=compress&cs=tinysrgb&w=800", "tag": "" }
+      ]
+    },
+    {
+      "name": "Kopi Kekinian",
+      "code": "KP",
+      "items": [
+        { "code": "KP-01", "name": "Kopi Susu Gula Aren", "price": "18.000", "img": "https://images.pexels.com/photos/6921351/pexels-photo-6921351.jpeg?auto=compress&cs=tinysrgb&w=800", "tag": "Favorit" },
+        { "code": "KP-02", "name": "Iced Americano", "price": "14.000", "img": "https://images.pexels.com/photos/17410085/pexels-photo-17410085.jpeg?auto=compress&cs=tinysrgb&w=800", "tag": "" }
+      ]
+    },
+    {
+      "name": "Boba Series",
+      "code": "BB",
+      "items": [
+        { "code": "BB-01", "name": "Brown Sugar Boba Milk", "price": "20.000", "img": "https://images.pexels.com/photos/6412830/pexels-photo-6412830.jpeg?auto=compress&cs=tinysrgb&w=800", "tag": "New" },
+        { "code": "BB-02", "name": "Taro Boba Blend", "price": "20.000", "img": "https://images.pexels.com/photos/28890152/pexels-photo-28890152.jpeg?auto=compress&cs=tinysrgb&w=800", "tag": "" }
+      ]
+    },
+    {
+      "name": "Mocktail Segar",
+      "code": "MK",
+      "items": [
+        { "code": "MK-01", "name": "Tropical Sunset Mocktail", "price": "17.000", "img": "https://images.pexels.com/photos/6468120/pexels-photo-6468120.jpeg?auto=compress&cs=tinysrgb&w=800", "tag": "" },
+        { "code": "MK-02", "name": "Yuzu Sparkling Fizz", "price": "18.000", "img": "https://images.pexels.com/photos/1194030/pexels-photo-1194030.jpeg?auto=compress&cs=tinysrgb&w=800", "tag": "" }
+      ]
+    }
+  ],
+  "builder": {
+    "bases": [
+      { "id": "thai", "label": "Thai Tea", "color": "#C9642A", "price": 15000 },
+      { "id": "matcha", "label": "Matcha Latte", "color": "#7C8A4A", "price": 18000 },
+      { "id": "choco", "label": "Choco Malt", "color": "#5A3A2A", "price": 17000 },
+      { "id": "taro", "label": "Taro Blend", "color": "#8B6FA8", "price": 18000 }
+    ],
+    "toppings": [
+      { "id": "boba", "label": "Boba Pearl", "price": 3000 },
+      { "id": "cheese", "label": "Cheese Foam", "price": 5000 },
+      { "id": "jelly", "label": "Grass Jelly", "price": 3000 },
+      { "id": "oat", "label": "Oat Cream", "price": 4000 }
+    ]
+  },
+  "features": [
+    { "icon": "leaf", "title": "Bahan Segar Harian", "desc": "Teh diseduh dan boba dimasak baru setiap pagi di tiap outlet." },
+    { "icon": "bolt", "title": "Antar Kilat", "desc": "Rata-rata pesanan sampai dalam 15 menit di area jangkauan." },
+    { "icon": "coin", "title": "Harga Bersahabat", "desc": "Mulai dari 14 ribu, cocok buat nongkrong tiap hari." },
+    { "icon": "heart", "title": "Less Sugar Option", "desc": "Semua menu bisa disesuaikan level gula dan esnya sendiri." }
+  ],
+  "gallery": [
+    { "img": "https://images.pexels.com/photos/6412830/pexels-photo-6412830.jpeg?auto=compress&cs=tinysrgb&w=700", "caption": "Brown Sugar Boba Milk" },
+    { "img": "https://images.pexels.com/photos/9229147/pexels-photo-9229147.jpeg?auto=compress&cs=tinysrgb&w=700", "caption": "Nongkrong bareng squad" },
+    { "img": "https://images.pexels.com/photos/1194030/pexels-photo-1194030.jpeg?auto=compress&cs=tinysrgb&w=700", "caption": "Thai Tea seger tiap siang" },
+    { "img": "https://images.pexels.com/photos/29180118/pexels-photo-29180118.jpeg?auto=compress&cs=tinysrgb&w=700", "caption": "Ngedate sama gebetan? Yowdrink dulu" },
+    { "img": "https://images.pexels.com/photos/6468120/pexels-photo-6468120.jpeg?auto=compress&cs=tinysrgb&w=700", "caption": "Mocktail buat vibes santai" },
+    { "img": "https://images.pexels.com/photos/8275692/pexels-photo-8275692.jpeg?auto=compress&cs=tinysrgb&w=700", "caption": "Rame-rame lebih seru" }
+  ],
+  "testimonials": [
+    { "name": "Kayla, 21", "role": "Mahasiswa", "quote": "Brown sugar boba-nya juara, manisnya pas dan gak eneg. Langganan tiap minggu!" },
+    { "name": "Raka, 24", "role": "Content Creator", "quote": "Rasa konsisten di semua outlet, dan admin fast response pas komplain kurang es." },
+    { "name": "Nadia, 19", "role": "Pelajar", "quote": "Fitur racik sendiri di webnya seru banget, jadi tau takaran favoritku sebelum order." }
+  ],
+  "outlets": [
+    { "name": "Yowdrink Palembang Ilir", "address": "Jl. Sudirman No. 88, Palembang" },
+    { "name": "Yowdrink Jakarta Selatan", "address": "Jl. Fatmawati No. 21, Jakarta" },
+    { "name": "Yowdrink Bandung Dago", "address": "Jl. Ir. H. Djuanda No. 45, Bandung" }
+  ],
+  "contact": {
+    "whatsapp": "https://wa.me/6281100000000",
+    "email": "halo@yowdrink.id",
+    "social": {
+      "instagram": "https://instagram.com/",
+      "tiktok": "https://tiktok.com/",
+      "youtube": "https://youtube.com/"
+    }
+  }
+}

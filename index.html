@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YowDrink — Minuman Kekinian Gen Z</title>
+<meta name="description" content="YowDrink: thai tea, kopi kekinian, boba, dan mocktail favorit Gen Z. Racik minumanmu sendiri, cek menu, dan temukan outlet terdekat.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.85em' font-size='90'%3E%F0%9F%A5%A4%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner container">
+    <a href="#top" class="nav__brand">
+      <span class="nav__cup" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none"><path d="M10 12h20l-2.6 20a3 3 0 0 1-3 2.6H15.6a3 3 0 0 1-3-2.6L10 12z" fill="var(--ivory)" stroke="var(--maroon)" stroke-width="2"/><path d="M8 12h24" stroke="var(--maroon)" stroke-width="2.4" stroke-linecap="round"/><circle cx="16" cy="24" r="1.6" fill="var(--maroon)"/><circle cx="21" cy="27" r="1.6" fill="var(--maroon)"/><circle cx="18" cy="30" r="1.6" fill="var(--maroon)"/></svg>
+      </span>
+      YOW<span class="nav__brand-accent">DRINK</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#menu">Menu</a>
+      <a href="#racik">Racik Sendiri</a>
+      <a href="#video">Video</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#kontak">Outlet</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="#racik" class="btn btn--sun nav__cta">Order Sekarang</a>
+      <button class="nav__burger" id="burger" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__drip" aria-hidden="true"></div>
+    <div class="container hero__grid">
+      <div class="hero__copy" data-reveal>
+        <p class="eyebrow">Minuman kekinian, harga bersahabat</p>
+        <h1>Ngopi, boba, atau <span class="italic">mocktail</span>? Yowdrink aja.</h1>
+        <p class="hero__lead">Dari thai tea seger sampai brown sugar boba yang bikin nagih — racik sesuai selera lidahmu sendiri, pesan dalam hitungan menit.</p>
+        <div class="hero__actions">
+          <a href="#racik" class="btn btn--primary">Racik Minumanmu</a>
+          <a href="#video" class="btn btn--ghost">Tonton Behind The Cup ▸</a>
+        </div>
+        <div class="hero__sticker" aria-hidden="true">Mulai 14rb</div>
+      </div>
+      <div class="hero__media" data-reveal>
+        <div class="cup-frame cup-frame--main">
+          <img src="https://images.pexels.com/photos/6412830/pexels-photo-6412830.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Tangan memegang segelas boba milk tea kekinian" loading="eager">
+        </div>
+        <div class="cup-frame cup-frame--small">
+          <img src="https://images.pexels.com/photos/1194030/pexels-photo-1194030.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Segelas thai tea dengan es dan sedotan" loading="lazy">
+        </div>
+        <div class="receipt-tag" aria-hidden="true">
+          <span>QTY 1</span><span>THAI TEA</span><span>Rp15.000</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats container" id="stats" aria-label="Pencapaian YowDrink">
+    <div class="stats__grid" id="statsGrid"><!-- filled by JS --></div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section id="menu" class="section menu">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow">Menu andalan</p>
+        <h2>Kode menu, biar order makin gampang</h2>
+        <p class="section__sub">Tinggal sebut kodenya ke kasir atau pilih waktu order online.</p>
+      </div>
+      <div class="menu__categories" id="menuCategories"><!-- filled by JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ RACIK SENDIRI (BUILDER) ============ -->
+  <section id="racik" class="section builder">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow eyebrow--light">Fitur favorit</p>
+        <h2>Racik Sendiri Minumanmu</h2>
+        <p class="section__sub section__sub--light">Pilih base, topping, level gula, dan level es — total harga otomatis kehitung.</p>
+      </div>
+
+      <div class="builder__panel" data-reveal>
+        <div class="builder__visual">
+          <svg viewBox="0 0 200 260" class="builder__cup" id="builderCup" aria-hidden="true">
+            <defs>
+              <clipPath id="cupClip"><path d="M38 40h124l-14 172a14 14 0 0 1-14 12H66a14 14 0 0 1-14-12L38 40z"/></clipPath>
+            </defs>
+            <path d="M38 40h124l-14 172a14 14 0 0 1-14 12H66a14 14 0 0 1-14-12L38 40z" fill="#ffffff" stroke="var(--ivory)" stroke-width="4"/>
+            <g clip-path="url(#cupClip)">
+              <rect id="cupFill" x="38" y="120" width="124" height="120" fill="#C9642A"/>
+              <g id="cupToppings"></g>
+            </g>
+            <path d="M38 40h124l-14 172a14 14 0 0 1-14 12H66a14 14 0 0 1-14-12L38 40z" fill="none" stroke="var(--maroon-deep)" stroke-width="3"/>
+            <path d="M30 40h140" stroke="var(--maroon-deep)" stroke-width="5" stroke-linecap="round"/>
+            <path d="M92 8l10 34M118 8l-6 34" stroke="var(--maroon-deep)" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <div class="builder__controls">
+          <div class="builder__group">
+            <h3>1. Pilih Base</h3>
+            <div class="builder__pills" id="baseOptions"></div>
+          </div>
+          <div class="builder__group">
+            <h3>2. Pilih Topping</h3>
+            <div class="builder__pills" id="toppingOptions"></div>
+          </div>
+          <div class="builder__group">
+            <h3>3. Level Gula: <span id="sugarVal">50%</span></h3>
+            <input type="range" min="0" max="100" step="25" value="50" id="sugarRange" class="builder__slider">
+          </div>
+          <div class="builder__group">
+            <h3>4. Level Es: <span id="iceVal">Normal</span></h3>
+            <input type="range" min="0" max="2" step="1" value="1" id="iceRange" class="builder__slider">
+          </div>
+        </div>
+
+        <div class="builder__receipt" id="builderReceipt">
+          <p class="receipt__title">STRUK PESANAN</p>
+          <div class="receipt__line"><span>Base</span><span id="rBase">Thai Tea</span></div>
+          <div class="receipt__line"><span>Topping</span><span id="rTopping">Boba Pearl</span></div>
+          <div class="receipt__line"><span>Gula / Es</span><span id="rSugarIce">50% / Normal</span></div>
+          <div class="receipt__divider"></div>
+          <div class="receipt__line receipt__total"><span>Total</span><span id="rTotal">Rp18.000</span></div>
+          <a href="#kontak" class="btn btn--sun receipt__cta">Pesan via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEO CAROUSEL ============ -->
+  <section id="video" class="section video-section">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow">Galeri video</p>
+        <h2>Behind the cup, behind the vibes</h2>
+        <p class="section__sub">Dari proses racik sampai suasana nongkrong yang jadi inspirasi menu.</p>
+      </div>
+
+      <div class="carousel" id="videoCarousel">
+        <button class="carousel__arrow carousel__arrow--prev" id="prevBtn" aria-label="Video sebelumnya">‹</button>
+        <div class="carousel__viewport">
+          <ul class="carousel__track" id="videoTrack"><!-- filled by JS --></ul>
+        </div>
+        <button class="carousel__arrow carousel__arrow--next" id="nextBtn" aria-label="Video berikutnya">›</button>
+      </div>
+      <div class="carousel__dots" id="videoDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ KENAPA YOWDRINK ============ -->
+  <section class="section features">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow">Kenapa Yowdrink</p>
+        <h2>Bukan cuma manis, tapi juga niat</h2>
+      </div>
+      <div class="features__grid" id="featuresGrid"><!-- filled by JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ GALERI FOTO ============ -->
+  <section id="galeri" class="section gallery">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow">Galeri</p>
+        <h2>Momen manis bareng Yowdrink</h2>
+      </div>
+      <div class="gallery__grid" id="galleryGrid"><!-- filled by JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONI ============ -->
+  <section id="testimoni" class="section testimonials">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow">Kata mereka</p>
+        <h2>Review jujur dari pelanggan</h2>
+      </div>
+      <div class="testimonials__grid" id="testiGrid"><!-- filled by JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ORDER ============ -->
+  <section class="cta">
+    <div class="container cta__inner" data-reveal>
+      <p class="eyebrow eyebrow--light">Jangan cuma di-wishlist</p>
+      <h2>Gelas pertamamu nunggu di-checkout.</h2>
+      <p class="cta__lead">Order online lewat WhatsApp atau langsung mampir ke outlet terdekat.</p>
+      <a href="#kontak" class="btn btn--sun btn--lg">Cari Outlet Terdekat</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER / KONTAK ============ -->
+<footer id="kontak" class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="#top" class="nav__brand nav__brand--footer">
+        <span class="nav__cup" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M10 12h20l-2.6 20a3 3 0 0 1-3 2.6H15.6a3 3 0 0 1-3-2.6L10 12z" fill="var(--ivory)" stroke="var(--maroon)" stroke-width="2"/></svg>
+        </span>
+        YOW<span class="nav__brand-accent">DRINK</span>
+      </a>
+      <p>Minuman kekinian buat nemenin hari-hari Gen Z — thai tea, kopi, boba, sampai mocktail.</p>
+      <div class="footer__social" id="footerSocial"></div>
+    </div>
+    <div class="footer__col">
+      <h3>Jelajahi</h3>
+      <a href="#menu">Menu</a>
+      <a href="#racik">Racik Sendiri</a>
+      <a href="#video">Video</a>
+      <a href="#galeri">Galeri</a>
+    </div>
+    <div class="footer__col" id="footerOutlets">
+      <h3>Outlet</h3>
+      <!-- filled by JS -->
+    </div>
+    <div class="footer__col" id="footerContact">
+      <h3>Kontak</h3>
+      <!-- filled by JS -->
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <p>© <span id="year"></span> YowDrink. Diracik dengan niat, diseduh dengan hati.</p>
+  </div>
+</footer>
+
+<!-- ============ VIDEO MODAL ============ -->
+<div class="modal" id="videoModal" aria-hidden="true">
+  <div class="modal__backdrop" id="modalBackdrop"></div>
+  <div class="modal__box">
+    <button class="modal__close" id="modalClose" aria-label="Tutup video">✕</button>
+    <div class="modal__frame" id="modalFrame"></div>
+  </div>
+</div>
+
+<!-- ============ LIGHTBOX FOTO ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+  <button class="lightbox__close" id="lightboxClose" aria-label="Tutup gambar">✕</button>
+  <img id="lightboxImg" alt="">
+  <p id="lightboxCaption"></p>
+</div>
+
+<button class="backtotop" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
