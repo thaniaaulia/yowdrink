@@ -1,0 +1,18 @@
+<!-- Tambahkan semua meta tag ini di dalam <head> index.html, setelah tag description -->
+<link rel="canonical" href="https://yowdrink.nnthan.my.id/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="YowDrink">
+<meta property="og:title" content="YowDrink — Minuman Kekinian Gen Z">
+<meta property="og:description" content="Thai tea, kopi kekinian, boba, dan mocktail favorit Gen Z. Racik minumanmu sendiri dan temukan menu andalan YowDrink.">
+<meta property="og:url" content="https://yowdrink.nnthan.my.id/">
+<meta property="og:image" content="https://yowdrink.nnthan.my.id/og-image.png">
+<meta property="og:image:secure_url" content="https://yowdrink.nnthan.my.id/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="YowDrink — minuman kekinian dengan ilustrasi gelas boba">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="YowDrink — Minuman Kekinian Gen Z">
+<meta name="twitter:description" content="Thai tea, kopi kekinian, boba, dan mocktail favorit Gen Z.">
+<meta name="twitter:image" content="https://yowdrink.nnthan.my.id/og-image.png">
